@@ -1,0 +1,55 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  h1{
+    text-align: center;
+  }
+  
+  .flexGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 35rem;
+    height: 35rem;
+    margin: auto;
+    background-color: pink;
+  }
+  
+  .box {
+    width: 32%;
+    height: 32%;
+    font-size: 10rem;
+    text-align: center;
+  }
+  
+  #endGame {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    left: 34%;
+    top: 20%;
+    width: 32%;
+    height: 30%;
+    background-color: rgba(0, 157, 255, 0.432);
+    margin: auto;
+  }
+  
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  .hidden{
+      display: none;
+  }
