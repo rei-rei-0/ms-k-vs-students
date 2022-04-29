@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Tic Tac Toe</h1>
+		</header>
+		<section class="flexGrid">
+            <input type="text" class="box" id="b1" onClick="ttt.addMark(this.id)" readonly> 
+            <input type="text" class="box" id="b2" onClick="ttt.addMark(this.id)" readonly>
+            <input type="text" class="box" id="b3" onClick="ttt.addMark(this.id)" readonly>
+
+            <input type="text" class="box" id="b4" onClick="ttt.addMark(this.id)" readonly>
+            <input type="text" class="box" id="b5" onClick="ttt.addMark(this.id)" readonly>
+            <input type="text" class="box" id="b6" onClick="ttt.addMark(this.id)" readonly>
+
+            <input type="text" class="box" id="b7" onClick="ttt.addMark(this.id)" readonly>
+            <input type="text" class="box" id="b8" onClick="ttt.addMark(this.id)" readonly>
+            <input type="text" class="box" id="b9" onClick="ttt.addMark(this.id)" readonly>
+        </section>
+		<section id="endGame" class="hidden">
+			<h2></h2>
+			<button class="playAgain" type="button" onClick="ttt.playAgain()" >Play Game</button>
+		</section>
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
