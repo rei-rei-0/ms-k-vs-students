@@ -18,7 +18,7 @@ class TicTacToeGame{
         if(this.player1){
             document.getElementById(clicked_id).value = 'X'
             document.getElementById(clicked_id).disabled = true;
-            document.getElementById(clicked_id).style.backgroundColor = 'lavender';  
+            document.getElementById(clicked_id).style.backgroundColor = 'lightyellow';  
             this.player1 = false
             this.player2 = true
             this.initializeBoxes()
@@ -27,6 +27,7 @@ class TicTacToeGame{
         else {
             document.getElementById(clicked_id).value = 'O'
             document.getElementById(clicked_id).disabled = true;
+            document.getElementById(clicked_id).style.backgroundColor = 'lightblue'; 
             this.player1 = true
             this.player2 = false
             this.initializeBoxes()
@@ -37,13 +38,13 @@ class TicTacToeGame{
         if(b1.value == 'X' && b2.value == 'X' && b3.value == 'X' || b4.value == 'X' && b5.value == 'X' && b6.value == 'X' || b7.value == 'X' && b8.value == 'X' && b9.value == 'X' ||
         b1.value == 'X' && b4.value == 'X' && b7.value == 'X' || b2.value == 'X' && b5.value == 'X' && b8.value == 'X'|| b3.value == 'X' && b6.value == 'X' && b9.value == 'X'
         || b1.value == 'X' && b5.value == 'X' && b9.value == 'X' || b3.value == 'X' && b5.value == 'X' && b7.value == 'X'){
-            document.querySelector('h2').innerText = 'Player 1 win'
+            document.querySelector('h2').innerText = 'Player 1 wins'
             this.showWinner()
         }
         else if(b1.value == 'O' && b2.value == 'O' && b3.value == 'O' || b4.value == 'O' && b5.value == 'O' && b6.value == 'O' || b7.value == 'O' && b8.value == 'O' && b9.value == 'O' ||
         b1.value == 'O' && b4.value == 'O' && b7.value == 'O' || b2.value == 'O' && b5.value == 'O' && b8.value == 'O'|| b3.value == 'O' && b6.value == 'O' && b9.value == 'O'
         || b1.value == 'O' && b5.value == 'OO' && b9.value == 'O' || b3.value == 'O' && b5.value == 'O' && b7.value == 'O'){
-            document.querySelector('h2').innerText = 'Player 2 win'
+            document.querySelector('h2').innerText = 'Player 2 wins'
             this.showWinner()
         }
         else if(b1.value && b2.value && b3.value && b4.value && b5.value && b6.value && b7.value && b8.value && b9.value){
