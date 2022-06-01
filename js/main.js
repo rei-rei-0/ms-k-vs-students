@@ -45,12 +45,11 @@ class TicTacToeGame{
         || b1.value == 'O' && b5.value == 'OO' && b9.value == 'O' || b3.value == 'O' && b5.value == 'O' && b7.value == 'O'){
             document.querySelector('h2').innerText = 'Player 2 win'
             this.showWinner()
-        }//need no one wins to works
-        if(document.getElementsByClassName('box') - 1){
-            document.querySelector('h2').innerText = 'Noone wins'
+        }
+        else if(b1.value && b2.value && b3.value && b4.value && b5.value && b6.value && b7.value && b8.value && b9.value){
+            document.querySelector('h2').innerText = 'No one wins'
             this.showWinner()
         }
-        
     }
     showWinner(){
         if(document.querySelector('h2').innerText){
